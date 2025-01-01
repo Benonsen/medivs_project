@@ -13,13 +13,22 @@ Interface  {
   }
   Parameters {  
     Field baseAngle0 {
-      type = String
+      type  = String
       value = "0"
     }
     Field baseClassification {
       type  = String
       value = ""
     }
+    Field baseFirstVector {
+      type  = String
+      value = "0 0 0"
+    }
+    Field baseSecondVector {
+      type  = String
+      value = "0 0 0"
+    }
+    
   }
 }
 Commands {
