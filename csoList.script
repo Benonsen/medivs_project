@@ -1,0 +1,28 @@
+Interface  {
+  Inputs  {
+    Field baseIn0 {
+      internalName = CSOListContainer.inUndoContext
+    }
+  }
+  Outputs  {
+    Field baseOut0 {
+      internalName = CSOListContainer.outCSOList
+    } 
+    
+    
+  }
+  Parameters {  
+    Field baseAngle0 {
+      type = String
+      value = "0"
+    }
+    Field baseClassification {
+      type  = String
+      value = ""
+    }
+  }
+}
+Commands {
+  source      = $(LOCAL)/csoList.py
+  initCommand = initCSOList
+}

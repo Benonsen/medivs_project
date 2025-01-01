@@ -1,0 +1,19 @@
+// MDL v1 utf8
+mevislabVersion = 3.4.2
+network  {
+  watchlist = ""
+}
+module CSOListContainer {
+  internal  {
+    frame = "2817 517 160 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = CSOListContainer
+    workDirectlyOnInputCSOList = FALSE
+    useUndoRedo = TRUE
+  }
+}
+connections = ""
+networkModel = ""
