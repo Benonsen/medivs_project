@@ -58,7 +58,7 @@ module SoCSODrawOnSurface {
     instanceName = SoCSODrawOnSurface
     interactionProviderID = ""
     cursorShapeDraw = CROSS_CURVE_CURSOR
-    editingOn = TRUE
+    editingOn = FALSE
     isEditing = FALSE
     modifierKey = AllModifiersMask
     pointsPerMM = 0.5
@@ -140,7 +140,7 @@ module SoRenderArea {
     moduleGroupName = ""
     windows  {
       window _viewer {
-        geometry = "387 488 1800 1097"
+        geometry = "0 352 1182 546"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -185,7 +185,7 @@ module SoCameraInteraction {
     moduleGroupName = ""
     windows  {
       window _default {
-        geometry = "346 331 298 391"
+        geometry = "96 331 298 391"
         sizeHint = "298 391"
         wasOpen = no
       }
@@ -260,12 +260,12 @@ module SoPerspectiveCamera {
   fields  {
     instanceName = SoPerspectiveCamera
     viewportMapping = ADJUST_CAMERA
-    position = "188.093185424805 1028.3203125 549.7763671875"
-    orientation = "-0.00357139995321631 -0.784537971019745 -0.620070397853851 2.85391163825989"
+    position = "220.703659057617 -235.191741943359 153.60612487793"
+    orientation = "0.617354810237885 0.743770003318787 -0.256279557943344 2.1831796169281"
     aspectRatio = 1
-    nearDistance = 338.50385
-    farDistance = 1083.7052
-    focalDistance = 772.1189
+    nearDistance = 1.0409448
+    farDistance = 1043.0288
+    focalDistance = 411.16925
     heightAngle = 0.78539819
   }
 }
@@ -491,9 +491,9 @@ module BoolInt {
   }
   fields  {
     instanceName = BoolInt
-    boolValue = TRUE
-    invBoolValue = FALSE
-    intValue = 1
+    boolValue = FALSE
+    invBoolValue = TRUE
+    intValue = 0
     offValue = 0
     onValue = 1
     defaultBool = Unchanged
@@ -514,7 +514,7 @@ module Counter {
   }
   fields  {
     instanceName = Counter
-    currentValue = 1
+    currentValue = 0
     minValue = 0
     maxValue = 1
     startValue = 0
@@ -540,15 +540,15 @@ module csoList {
   }
   fields  {
     instanceName = csoList
-    baseAngle0 = "Cobb-angle: 93.34°"
+    baseAngle0 = "Cobb-angle: 78.52°"
     baseClassification = "Severe scoliosis"
-    baseFirstVector = "[345.0626983642578 389.7546691894531 1540.8441772460938, 128.40223693847656 314.6765441894531 128.20013427734375]"
-    baseSecondVector = "[417.5155944824219 561.9960021972656 692.206298828125, 99.75405883789062 159.67056274414062 793.136474609375]"
+    baseFirstVector = "[-22.7232666015625 313.9554138183594 1163.5881042480469, 167.00772094726562 -122.06814575195312 -468.7367248535156]"
+    baseSecondVector = "[-123.26187133789062 105.78180694580078 277.9344787597656, 269.078369140625 49.637550354003906 256.2334289550781]"
   }
 }
 module DirectDicomImport {
   internal  {
-    frame = "2561 957 160 56"
+    frame = "2457 965 160 56"
     moduleGroupName = ""
     showNetworkPanel = true
     windows  {
@@ -928,7 +928,7 @@ validImage hasIssues fileType voxelType imgExt numVoxels numSlices numTimePoints
 }
 module ApplyDicomPixelModifiers {
   internal  {
-    frame = "2549 829 168 56"
+    frame = "2429 885 168 56"
     moduleGroupName = ""
     windows  {
       window _default {
@@ -956,7 +956,7 @@ module WEMIsoSurface {
     showNetworkPanel = true
     windows  {
       window _default {
-        geometry = "687 429 424 366"
+        geometry = "416 431 424 366"
         sizeHint = "424 366"
         wasOpen = no
       }
@@ -971,7 +971,7 @@ module WEMIsoSurface {
     label = ""
     description = ""
     shouldComputeNormals = TRUE
-    isoMinValue = 180
+    isoMinValue = 108
     isoMaxValue = 0
     useMinValue = FALSE
     useMaxValue = TRUE
@@ -992,7 +992,7 @@ module WEMIsoSurface {
 }
 module ROISelect {
   internal  {
-    frame = "2581 701 88 56"
+    frame = "2445 805 88 56"
     moduleGroupName = ""
     windows  {
       window _default {
@@ -1267,7 +1267,7 @@ module SoExtText2 {
   }
   fields  {
     instanceName = SoExtTextCobbAnlge
-    string = "Cobb-angle: 93.34°"
+    string = "Cobb-angle: 78.52°"
     color = "1 1 1"
     shadow = TRUE
     shadowColor = "0 0 0"
@@ -1467,7 +1467,7 @@ module SoExtText2 {
 }
 module SoLineSet {
   internal  {
-    frame = "3449 245 128 72"
+    frame = "3665 245 128 72"
     moduleGroupName = ""
     windows  {
       window _default {
@@ -1487,7 +1487,7 @@ module SoLineSet {
 }
 module SoVertexProperty {
   internal  {
-    frame = "3449 373 128 72"
+    frame = "3665 373 128 72"
     moduleGroupName = ""
     windows  {
       window _default {
@@ -1499,7 +1499,7 @@ module SoVertexProperty {
   }
   fields  {
     instanceName = SoVertexFirstLine
-    vertex = "[ 345.062683105469 389.754669189453 1540.84423828125, 128.402236938477 314.676544189453 128.200134277344 ]"
+    vertex = "[ -22.7232666015625 313.955413818359 1163.58813476562, 167.007720947266 -122.068145751953 -468.736724853516 ]"
     normal = "[  ]"
     texCoord = "[  ]"
     orderedRGBA = "[  ]"
@@ -1509,7 +1509,7 @@ module SoVertexProperty {
 }
 module SoDrawStyle {
   internal  {
-    frame = "3197 245 104 72"
+    frame = "3413 245 104 72"
     moduleGroupName = ""
     showNetworkPanel = true
     windows  {
@@ -1530,7 +1530,7 @@ module SoDrawStyle {
 }
 module SoMaterial {
   internal  {
-    frame = "3333 253 88 56"
+    frame = "3549 253 88 56"
     moduleGroupName = ""
     windows  {
       window _materialeditor {
@@ -1552,7 +1552,7 @@ module SoMaterial {
 }
 module SoSeparator {
   internal  {
-    frame = "3405 133 152 56"
+    frame = "3621 133 152 56"
     moduleGroupName = ""
     windows  {
       window _viewer {
@@ -1572,7 +1572,7 @@ module SoSeparator {
 }
 module SoLineSet {
   internal  {
-    frame = "3601 245 144 72"
+    frame = "3817 245 144 72"
     moduleGroupName = ""
     windows  {
       window _default {
@@ -1592,7 +1592,7 @@ module SoLineSet {
 }
 module SoVertexProperty {
   internal  {
-    frame = "3601 373 144 72"
+    frame = "3817 373 144 72"
     moduleGroupName = ""
     windows  {
       window _default {
@@ -1604,7 +1604,7 @@ module SoVertexProperty {
   }
   fields  {
     instanceName = SoVertexSecondLine
-    vertex = "[ 417.515594482422 561.995971679688 692.206298828125, 99.7540588378906 159.670562744141 793.136474609375 ]"
+    vertex = "[ -123.261871337891 105.781806945801 277.934478759766, 269.078369140625 49.6375503540039 256.233428955078 ]"
     normal = "[  ]"
     texCoord = "[  ]"
     orderedRGBA = "[  ]"
@@ -1641,6 +1641,158 @@ module WEMSmooth {
     smoothingPassesNormals = 2
   }
 }
+module itkImageFileReader {
+  internal  {
+    frame = "2681 965 128 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "744 391 310 443"
+        sizeHint = "310 443"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = itkImageFileReader
+    fileDataType = int16
+    autoDetermineDataType = FALSE
+    correctSubVoxelShift = TRUE
+    fileDimension = 3
+    info = "Loading okay."
+    numDims = 3
+    fileType = Binary
+    componentType = int16
+    pixelType = SCALAR
+    loaderType = MetaImageIO
+    outputMetaDataStr = "ITK_InputFilterName : MetaImageIO
+"
+    suppressErrorPosting = FALSE
+    unresolvedFileName = $(HOME)/code/MedVis/project/Proj5_Scoliosis/Proj5_Scoliosis/patient0013/4511471/4511471.mhd
+  }
+}
+module Switch {
+  internal  {
+    frame = "2577 709 144 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = Switch
+    currentInput = 1
+    numberOfInputs = 5
+  }
+}
+module ROISelect {
+  internal  {
+    frame = "2685 797 88 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "762 236 500 406"
+        sizeHint = "500 406"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ROISelect1
+    editMode = Edit
+    currentPosOn = Navigate
+    editModeFieldDisable = FALSE
+    allTimepoints = TRUE
+    usePreview = FALSE
+    timepoint = 0
+    unit = ""
+    startWorldPos = "141.723968505859 -0.157226502895355 47.5"
+    startVoxelX = 451
+    startVoxelY = 0
+    startVoxelZ = 19
+    endWorldPos = "3.86777210235596 150.780212402344 1495"
+    endVoxelX = 12
+    endVoxelY = 479
+    endVoxelZ = 598
+    boxOn = TRUE
+    boxShiftListen = RELEASED
+    boxCtrlListen = RELEASED
+    boxBlend = 0.14
+    boxColor = "1 0.979525029659271 0.38740399479866"
+    allowDraw = TRUE
+    reset = FALSE
+    currentPos = "0 0 0"
+    currentPosShiftListen = PRESSED
+    currentPosCtrlListen = RELEASED
+    currentPosColor = "1 1 1"
+    layout = LAYOUT_ROW_EQUAL
+    worldPosition = "0 0 102.5"
+    useGlobalInputImage = TRUE
+    restriction = MaxMBytesIsotropic
+    limit = 10
+    grayWidth = 1
+    grayCenter = 0.5
+    annotationColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationOn = TRUE
+    annotShowAnnot = ANNO_SHOW_HIDE
+    annotFontSize = ANNO_SIZE_AUTO
+    annotShowOrientation = ANNO_ORIENTATION_SIZE_WEIGHTED
+    annotVerticalRuler = TRUE
+    annotHorizontalRuler = FALSE
+  }
+}
+module SoSlideWidget {
+  internal  {
+    frame = "3233 125 112 72"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1233 274 421 702"
+        sizeHint = "323 702"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "871 319 502 594"
+        sizeHint = "262 217"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = sliceWidget
+    interactionProviderID = ""
+    overlayReferenceCorner = UPPER_RIGHT
+    margin = "20 80"
+    size = "40 400"
+    nativeSize = TRUE
+    disableZBuffer = TRUE
+    overlayImage = $(LOCAL)/images/ScrollWidget.png
+    overlayColor = "1 1 1"
+    overlayAlpha = 1
+    overlayBlendMode = OverlayBlend
+    interactionShape = RECTANGLE
+    enableStepping = TRUE
+    xMin = 0
+    xMax = 1
+    xValue = 0
+    xStep = 1
+    xSensitivity = 1
+    xClamp = TRUE
+    xRoundToInt = FALSE
+    yMin = 0
+    yMax = 1000
+    yValue = 108
+    yStep = 1
+    ySensitivity = 0.5
+    yClamp = TRUE
+    yRoundToInt = TRUE
+    dragAxis = DRAG_VERTICAL
+    cursorShapeDefault = SLICING_CURSOR
+    cursorShapeIncVertical = SLICING_CURSOR
+    cursorShapeDecVertical = SLICING_CURSOR
+    cursorShapeIncHorizontal = MOVE_HORI_CURSOR
+    cursorShapeDecHorizontal = MOVE_HORI_CURSOR
+  }
+}
 connections  {
   SoCSO3DRenderer.inCSOList = csoList.baseOut0
   SoCSO3DRenderer.inVisualizationSettings = SoCSOVisualizationSettings1.outVisualizationSettings
@@ -1649,12 +1801,13 @@ connections  {
   SoWEMRenderer.inWEM = WEMModify.outWEM
   SoRenderArea.children = "SoAnnotation.self SoBackground.self SoCameraInteraction.self"
   SoCameraInteraction.inScene = SoGroupSpine.self
-  SoGroupSpine.children = "ViewAll.self clearAllCSOs.self toggleInteraction.self SoPerspectiveCamera.self SoWEMRenderer.self SoCSODrawOnSurface.self SoCSO3DRenderer.self SoSeparator.self"
+  SoGroupSpine.children = "ViewAll.self clearAllCSOs.self toggleInteraction.self SoPerspectiveCamera.self SoWEMRenderer.self SoCSODrawOnSurface.self SoCSO3DRenderer.self sliceWidget.self SoSeparator.self"
   BoolInt.intValue = Counter.currentValue
   Counter.performStep = toggleInteraction.execute
   csoList.baseIn0 = UndoManager.outUndoContext
   ApplyDicomPixelModifiers.input0 = DirectDicomImport.output0
-  WEMIsoSurface_spine.input0 = ROISelect.outImage
+  WEMIsoSurface_spine.input0 = Switch.output0
+  WEMIsoSurface_spine.isoMinValue = sliceWidget.yValue
   ROISelect.inImage = ApplyDicomPixelModifiers.output0
   SoWEMRendererWholeBody.inWEM = WEMModifywhole_body.outWEM
   WEMLevelSetBoolean.inWEM0 = WEMISOSurfaceWholeBody.outWEM
@@ -1672,6 +1825,9 @@ connections  {
   SoLineSetSecondLine.vertexProperty = SoVertexSecondLine.self
   SoVertexSecondLine.vertex = csoList.baseSecondVector
   WEMSmooth1.inWEM = WEMIsoSurface_spine.outWEM
+  Switch.input0 = ROISelect.outImage
+  Switch.input1 = ROISelect1.outImage
+  ROISelect1.inImage = itkImageFileReader.output0
 }
 networkModel  {
   parentItems  {
