@@ -23,8 +23,8 @@ def csoFinished(_arg):
       cobb_angle = vtk.vtkMath.DegreesFromRadians(radians)
       ctx.field("baseClassification").value = classify(cobb_angle)
       ctx.field("baseAngle0").value = "Cobb-angle: " + str(round(cobb_angle, 2)) + "°"
-      str_arr1 = " ".join(map(str, directionVectors[0] + start)) 
-      str_arr2 = " ".join(map(str, directionVectors[0] * 1000))  
+      str_arr1 = " ".join(map(str, directionVectors[1] + start)) 
+      str_arr2 = " ".join(map(str, (directionVectors[1] + start) * 10))  
       ctx.field("baseFirstVector").value = f"[{str_arr1}, {str_arr2}]"
       ctx.field("baseSecondVector").value = "[ " + str(directionVectors[1] * 5) + " ]"
 
