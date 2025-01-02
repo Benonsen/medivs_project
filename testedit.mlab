@@ -140,7 +140,7 @@ module SoRenderArea {
     moduleGroupName = ""
     windows  {
       window _viewer {
-        geometry = "203 379 400 400"
+        geometry = "774 370 1800 1097"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -185,7 +185,7 @@ module SoCameraInteraction {
     moduleGroupName = ""
     windows  {
       window _default {
-        geometry = "750 417 298 391"
+        geometry = "346 331 298 391"
         sizeHint = "298 391"
         wasOpen = no
       }
@@ -260,12 +260,12 @@ module SoPerspectiveCamera {
   fields  {
     instanceName = SoPerspectiveCamera
     viewportMapping = ADJUST_CAMERA
-    position = "336.436462402344 640.980834960938 1007.02606201172"
-    orientation = "-0.010748921893537 -0.225896611809731 -0.97409200668335 3.43885159492493"
+    position = "393.545806884766 -380.340606689453 868.65771484375"
+    orientation = "0.99593311548233 -0.0155039224773645 0.0887516811490059 1.34364628791809"
     aspectRatio = 1
-    nearDistance = 121.56203
-    farDistance = 2102.4465
-    focalDistance = 1111.015
+    nearDistance = 405.2587
+    farDistance = 976.44647
+    focalDistance = 691.86731
     heightAngle = 0.78539819
   }
 }
@@ -532,7 +532,7 @@ module csoList {
     localMacro = 1
     windows  {
       window _default {
-        geometry = "649 312 500 600"
+        geometry = "227 409 500 600"
         sizeHint = "269 266"
         wasOpen = no
       }
@@ -540,10 +540,10 @@ module csoList {
   }
   fields  {
     instanceName = csoList
-    baseAngle0 = "Cobb-angle: 83.38°"
-    baseClassification = "Severe scoliosis"
-    baseFirstVector = "[276.74460648132373 333.8617120709602 696.0199559561355, 165.84061218310794 -43.988612633566675 -985.1709969895105]"
-    baseSecondVector = "[ [-2.64079056 -4.16098654 -0.84404751] ]"
+    baseAngle0 = "Cobb-angle: 21.74°"
+    baseClassification = "Moderate scoliosis"
+    baseFirstVector = "[-135.87098693847656 243.7724609375 768.4658813476562, 621.9924774169922 345.2501220703125 671.6287231445312]"
+    baseSecondVector = "[-120.44053649902344 81.062744140625 714.9022827148438, 610.2982940673828 487.2822265625 669.6215209960938]"
   }
 }
 module DirectDicomImport {
@@ -1244,7 +1244,7 @@ module WEMIsoSurface {
 }
 module ROISelect {
   internal  {
-    frame = "2613 853 88 56"
+    frame = "2621 917 88 56"
     moduleGroupName = ""
     windows  {
       window _default {
@@ -1301,7 +1301,7 @@ module ROISelect {
 }
 module SoWEMRenderer {
   internal  {
-    frame = "3323 541 160 72"
+    frame = "3336 562 160 72"
     moduleGroupName = whole_body
     showNetworkPanel = true
     windows  {
@@ -1352,7 +1352,7 @@ module SoWEMRenderer {
 }
 module WEMIsoSurface {
   internal  {
-    frame = "3231 1021 152 72"
+    frame = "3244 1042 152 72"
     moduleGroupName = whole_body
     showNetworkPanel = true
     windows  {
@@ -1391,25 +1391,9 @@ module WEMIsoSurface {
     voxelSampling = 3
   }
 }
-module WEMExtrude {
-  internal  {
-    frame = "2333 389 104 56"
-    moduleGroupName = ""
-  }
-  fields  {
-    instanceName = WEMExtrude
-    lineColor = "1 1 0.600000023841858"
-    filterSensitivity = 0.99000001
-    status = "Not enough hit points."
-    autoUpdate = TRUE
-    autoApply = TRUE
-    triangulate = TRUE
-    subdivide = TRUE
-  }
-}
 module WEMLevelSetBoolean {
   internal  {
-    frame = "3339 877 176 56"
+    frame = "3352 898 176 56"
     moduleGroupName = whole_body
     showNetworkPanel = true
     windows  {
@@ -1444,7 +1428,7 @@ module WEMLevelSetBoolean {
 }
 module WEMModify {
   internal  {
-    frame = "2585 597 128 56"
+    frame = "2585 525 128 56"
     moduleGroupName = ""
     showNetworkPanel = true
     windows  {
@@ -1535,7 +1519,7 @@ module SoExtText2 {
   }
   fields  {
     instanceName = SoExtText2
-    string = "Cobb-angle: 83.38°"
+    string = "Cobb-angle: 21.74°"
     color = "1 1 1"
     shadow = TRUE
     shadowColor = "0 0 0"
@@ -1555,7 +1539,7 @@ module SoExtText2 {
 }
 module WEMIsoSurface {
   internal  {
-    frame = "3463 1021 152 72"
+    frame = "3476 1042 152 72"
     moduleGroupName = whole_body
     showNetworkPanel = true
     windows  {
@@ -1596,7 +1580,7 @@ module WEMIsoSurface {
 }
 module WEMModify {
   internal  {
-    frame = "3335 653 136 56"
+    frame = "3348 674 136 56"
     moduleGroupName = whole_body
     showNetworkPanel = true
     windows  {
@@ -1653,7 +1637,7 @@ module WEMModify {
 }
 module WEMSmooth {
   internal  {
-    frame = "3343 749 136 72"
+    frame = "3356 770 136 72"
     moduleGroupName = whole_body
     showNetworkPanel = true
   }
@@ -1682,7 +1666,7 @@ module WEMSmooth {
 }
 module SoGroup {
   internal  {
-    frame = "3340 422 128 56"
+    frame = "3369 443 96 56"
     moduleGroupName = whole_body
     windows  {
       window _viewer {
@@ -1715,7 +1699,7 @@ module SoExtText2 {
   }
   fields  {
     instanceName = SoExtText21
-    string = "Severe scoliosis"
+    string = "Moderate scoliosis"
     color = "1 1 1"
     shadow = TRUE
     shadowColor = "0 0 0"
@@ -1795,7 +1779,7 @@ module SoLineSet {
 }
 module SoVertexProperty {
   internal  {
-    frame = "2969 253 128 56"
+    frame = "3001 253 128 56"
     moduleGroupName = ""
     windows  {
       window _default {
@@ -1807,7 +1791,7 @@ module SoVertexProperty {
   }
   fields  {
     instanceName = SoVertexProperty
-    vertex = "[ 276.744598388672 333.861724853516 696.019958496094, 165.840606689453 -43.9886131286621 -985.171020507812 ]"
+    vertex = "[ -135.870986938477 243.7724609375 768.465881347656, 621.992492675781 345.250122070312 671.628723144531 ]"
     normal = "[  ]"
     texCoord = "[  ]"
     orderedRGBA = "[  ]"
@@ -1860,7 +1844,7 @@ module SoDrawStyle {
     instanceName = SoDrawStyle
     style = FILLED
     pointSize = 1
-    lineWidth = 10
+    lineWidth = 5
     linePattern = 65535
   }
 }
@@ -1872,7 +1856,7 @@ module SoMaterial {
       window _materialeditor {
         geometry = "1586 659 214 194"
         sizeHint = "214 194"
-        wasOpen = yes
+        wasOpen = no
       }
     }
   }
@@ -1906,6 +1890,77 @@ module SoSeparator {
     pickCulling = AUTO
   }
 }
+module SoLineSet {
+  internal  {
+    frame = "3181 141 88 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "136 155 250 56"
+        sizeHint = "163 56"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoLineSet1
+    startIndex = 0
+    numVertices = -1
+    sendAdjacency = FALSE
+    independentLines = FALSE
+  }
+}
+module SoVertexProperty {
+  internal  {
+    frame = "3161 269 128 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "878 613 1482 192"
+        sizeHint = "286 192"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoVertexProperty1
+    vertex = "[ -120.440536499023 81.062744140625 714.902282714844, 610.298278808594 487.2822265625 669.621520996094 ]"
+    normal = "[  ]"
+    texCoord = "[  ]"
+    orderedRGBA = "[  ]"
+    materialBinding = OVERALL
+    normalBinding = OVERALL
+  }
+}
+module WEMSmooth {
+  internal  {
+    frame = "2581 605 136 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = WEMSmooth1
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    workDirectlyOnInputWEMs = FALSE
+    listenToFinishNotifications = TRUE
+    listenToRepaintNotifications = TRUE
+    listenToSelectionChangedNotifications = TRUE
+    triangulationMode = Strip
+    useLaplacianSmooth = TRUE
+    smoothingFactor = 0.2
+    smoothingPassesLaplace = 10
+    useDisplacementAdjustment = TRUE
+    useBorderPreservation = TRUE
+    useNormalSmooth = FALSE
+    smoothingPassesNormals = 2
+  }
+}
 connections  {
   SoCSO3DRenderer.inCSOList = csoList.baseOut0
   SoCSO3DRenderer.inVisualizationSettings = SoCSOVisualizationSettings1.outVisualizationSettings
@@ -1926,7 +1981,7 @@ connections  {
   SoWEMRenderer1.inWEM = WEMModify2.outWEM
   WEMLevelSetBoolean.inWEM0 = WEMIsoSurface1.outWEM
   WEMLevelSetBoolean.inWEM1 = WEMIsoSurface2.outWEM
-  WEMModify.inWEM = WEMIsoSurface_skin.outWEM
+  WEMModify.inWEM = WEMSmooth1.outWEM
   SoAnnotation.children = "SoExtText21.self SoExtText2.self"
   SoExtText2.string = csoList.baseAngle0
   WEMModify2.inWEM = WEMSmooth.outWEM
@@ -1935,7 +1990,10 @@ connections  {
   SoExtText21.string = csoList.baseClassification
   SoLineSet.vertexProperty = SoVertexProperty.self
   SoVertexProperty.vertex = csoList.baseFirstVector
-  SoSeparator.children = "SoDrawStyle.self SoMaterial.self SoLineSet.self"
+  SoSeparator.children = "SoDrawStyle.self SoMaterial.self SoLineSet.self SoLineSet1.self"
+  SoLineSet1.vertexProperty = SoVertexProperty1.self
+  SoVertexProperty1.vertex = csoList.baseSecondVector
+  WEMSmooth1.inWEM = WEMIsoSurface_skin.outWEM
 }
 networkModel  {
   parentItems  {
@@ -1944,7 +2002,7 @@ networkModel  {
         uniqueId = 57
         objectName = ""
         parentUniqueId = 0
-        frame = "3130 -11 252 206"
+        frame = "3290 -25 252 206"
         backgroundColor  {
           r = 252
           g = 242
@@ -1964,7 +2022,7 @@ CTRL+V: View all"
         titleText = ""
         isCollapsed = False
         drawAsComment = False
-        titleFrame = "3135 -6 242 22"
+        titleFrame = "3295 -20 242 22"
       }
       MLABNetworkModelItem MLABNoteItem {
         uniqueId = 97
