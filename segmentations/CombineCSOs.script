@@ -1,0 +1,58 @@
+Interface  {
+  Parameters {  
+    Field spineCSOsDirectoryName {
+      type  = String
+      value = "."
+      isFilePath = True
+      
+    }
+    Field isVisibleCSO {
+      type = Bool
+      value = True
+      editable = False
+    }
+  }
+  
+  Outputs  {
+    Field outCombinedCSOList {
+      type = MLBase
+      visibleOn = isVisibleCSO
+      allowedTypes = CSOList
+    }  
+  }
+}
+
+Commands {
+  source = $(LOCAL)/combineCSOs.py
+  
+  FieldListener spineCSOsDirectoryName {
+    command = handleDirectoryChange
+  }
+}
+
+NetworkPanel {
+  Button RunPythonScript.execute {
+    command = combineCSOs
+  }
+}
+
+Window {
+  title = "Combine CSOs"
+  
+  Vertical {
+    margin  = 5
+    spacing = 15
+    
+    Box {
+      Field spineCSOsDirectoryName {
+        browseButton = Yes
+        browseMode   = directory
+      }
+    }
+    
+    Button RunPythonScript.execute {
+      command = combineCSOs
+      alignX = Right
+    }
+  }
+}
