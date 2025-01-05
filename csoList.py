@@ -8,6 +8,7 @@ def initCSOList():
 
 def registerForNotification():
     csoList = _getCSOList()
+    csoList.removeAll()
     csoList.registerForNotification(csoList.NOTIFICATION_CSO_FINISHED, ctx, "csoFinished")
 
 
