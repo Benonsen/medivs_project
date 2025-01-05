@@ -28,8 +28,8 @@ def csoFinished(_arg):
             directionVector = (end - start)
             directionVectors.append(directionVector)
 
-        a = [directionVectors[0][1], directionVectors[0][0] * -1, directionVectors[0][2]]
-        b = [directionVectors[1][1], directionVectors[1][0] * -1, directionVectors[1][2]]
+        a = [directionVectors[0][1], directionVectors[0][0] * -1, 1]
+        b = [directionVectors[1][1], directionVectors[1][0] * -1, 1]
         radians = vtk.vtkMath.AngleBetweenVectors(a, b)
         cobb_angle = vtk.vtkMath.DegreesFromRadians(radians)
         ctx.field("baseClassification").value = classify(cobb_angle)

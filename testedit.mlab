@@ -140,7 +140,7 @@ module SoRenderArea {
     moduleGroupName = ""
     windows  {
       window _viewer {
-        geometry = "0 352 1182 546"
+        geometry = "707 260 926 797"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -251,7 +251,7 @@ module SoPerspectiveCamera {
     moduleGroupName = ""
     windows  {
       window _default {
-        geometry = "689 483 464 259"
+        geometry = "44 590 464 259"
         sizeHint = "421 259"
         wasOpen = no
       }
@@ -260,12 +260,12 @@ module SoPerspectiveCamera {
   fields  {
     instanceName = SoPerspectiveCamera
     viewportMapping = ADJUST_CAMERA
-    position = "220.703659057617 -235.191741943359 153.60612487793"
-    orientation = "0.617354810237885 0.743770003318787 -0.256279557943344 2.1831796169281"
+    position = "346.135711669922 -131.574432373047 946.22607421875"
+    orientation = "0.961846053600311 0.0435977801680565 0.270095348358154 1.13724005222321"
     aspectRatio = 1
-    nearDistance = 1.0409448
-    farDistance = 1043.0288
-    focalDistance = 411.16925
+    nearDistance = 261.60165
+    farDistance = 765.49945
+    focalDistance = 513.836
     heightAngle = 0.78539819
   }
 }
@@ -540,10 +540,10 @@ module csoList {
   }
   fields  {
     instanceName = csoList
-    baseAngle0 = "Cobb-angle: 78.52°"
-    baseClassification = "Severe scoliosis"
-    baseFirstVector = "[-22.7232666015625 313.9554138183594 1163.5881042480469, 167.00772094726562 -122.06814575195312 -468.7367248535156]"
-    baseSecondVector = "[-123.26187133789062 105.78180694580078 277.9344787597656, 269.078369140625 49.637550354003906 256.2334289550781]"
+    baseAngle0 = "Cobb-angle: 3.95°"
+    baseClassification = "Normal spine"
+    baseFirstVector = "[-78.33784484863281 248.44830322265625 686.8699340820312, 569.2558441162109 320.04742431640625 686.8003540039062]"
+    baseSecondVector = "[-50.66447448730469 278.36407470703125 727.9361572265625, 541.9756011962891 302.84100341796875 710.6131591796875]"
   }
 }
 module DirectDicomImport {
@@ -971,7 +971,7 @@ module WEMIsoSurface {
     label = ""
     description = ""
     shouldComputeNormals = TRUE
-    isoMinValue = 108
+    isoMinValue = 223
     isoMaxValue = 0
     useMinValue = FALSE
     useMaxValue = TRUE
@@ -1267,12 +1267,12 @@ module SoExtText2 {
   }
   fields  {
     instanceName = SoExtTextCobbAnlge
-    string = "Cobb-angle: 78.52°"
+    string = "Cobb-angle: 3.95°"
     color = "1 1 1"
-    shadow = TRUE
+    shadow = FALSE
     shadowColor = "0 0 0"
-    backgroundAlpha = 0.2
-    backgroundColor = "1 1 1"
+    backgroundAlpha = 1
+    backgroundColor = "0 0 0"
     background = TRUE
     alwaysOnTop = TRUE
     applyClippingPlanes = TRUE
@@ -1447,12 +1447,12 @@ module SoExtText2 {
   }
   fields  {
     instanceName = SoExtTextClassification
-    string = "Severe scoliosis"
+    string = "Normal spine"
     color = "1 1 1"
-    shadow = TRUE
+    shadow = FALSE
     shadowColor = "0 0 0"
-    backgroundAlpha = 0.2
-    backgroundColor = "1 1 1"
+    backgroundAlpha = 1
+    backgroundColor = "0 0 0"
     background = TRUE
     alwaysOnTop = TRUE
     applyClippingPlanes = TRUE
@@ -1499,7 +1499,7 @@ module SoVertexProperty {
   }
   fields  {
     instanceName = SoVertexFirstLine
-    vertex = "[ -22.7232666015625 313.955413818359 1163.58813476562, 167.007720947266 -122.068145751953 -468.736724853516 ]"
+    vertex = "[ -78.3378448486328 248.448303222656 686.869934082031, 569.255859375 320.047424316406 686.800354003906 ]"
     normal = "[  ]"
     texCoord = "[  ]"
     orderedRGBA = "[  ]"
@@ -1604,7 +1604,7 @@ module SoVertexProperty {
   }
   fields  {
     instanceName = SoVertexSecondLine
-    vertex = "[ -123.261871337891 105.781806945801 277.934478759766, 269.078369140625 49.6375503540039 256.233428955078 ]"
+    vertex = "[ -50.6644744873047 278.364074707031 727.936157226562, 541.9755859375 302.841003417969 710.613159179688 ]"
     normal = "[  ]"
     texCoord = "[  ]"
     orderedRGBA = "[  ]"
@@ -1679,7 +1679,7 @@ module Switch {
   }
   fields  {
     instanceName = Switch
-    currentInput = 1
+    currentInput = 0
     numberOfInputs = 5
   }
 }
@@ -1704,11 +1704,11 @@ module ROISelect {
     usePreview = FALSE
     timepoint = 0
     unit = ""
-    startWorldPos = "141.723968505859 -0.157226502895355 47.5"
+    startWorldPos = "141.818298339844 0 47.5"
     startVoxelX = 451
     startVoxelY = 0
     startVoxelZ = 19
-    endWorldPos = "3.86777210235596 150.780212402344 1495"
+    endWorldPos = "3.77343606948853 150.622985839844 1495"
     endVoxelX = 12
     endVoxelY = 479
     endVoxelZ = 598
@@ -1780,7 +1780,7 @@ module SoSlideWidget {
     xRoundToInt = FALSE
     yMin = 0
     yMax = 1000
-    yValue = 108
+    yValue = 223
     yStep = 1
     ySensitivity = 0.5
     yClamp = TRUE
