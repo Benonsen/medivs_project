@@ -14,6 +14,10 @@ def registerForNotification():
 
 def csoFinished(_arg):
     csoList = _getCSOList()
+    if len(csoList.getCSOs()) < 2: 
+        ctx.field("baseFirstVector").value = "[]"
+        ctx.field("baseSecondVector").value = "[]"
+
     if len(csoList.getCSOs()) == 2:
         directionVectors = []
         startVectors = []
@@ -42,7 +46,7 @@ def csoFinished(_arg):
         str_arr2 = " ".join(map(str, (directionVectors[1] * 10) + startVectors[1]))
         ctx.field("baseSecondVector").value = f"[{str_arr1}, {str_arr2}]"
 
-    if len(csoList.getCSOs()) > 2:
+    if len(csoList.getCSOs()) >= 2:
         csoList.removeAll()
 
 

@@ -140,7 +140,7 @@ module SoRenderArea {
     moduleGroupName = ""
     windows  {
       window _viewer {
-        geometry = "375 219 926 797"
+        geometry = "375 186 926 830"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -260,11 +260,11 @@ module SoPerspectiveCamera {
   fields  {
     instanceName = SoPerspectiveCamera
     viewportMapping = ADJUST_CAMERA
-    position = "244.406356811523 -428.972381591797 842.637573242188"
-    orientation = "0.999967694282532 -0.00803954806178808 8.01626301836222e-05 1.38911700248718"
+    position = "204.997909545898 -425.243682861328 854.823608398438"
+    orientation = "0.998789846897125 -0.0436616018414497 -0.0226383395493031 1.37280631065369"
     aspectRatio = 1
-    nearDistance = 621.1579
-    farDistance = 872.24957
+    nearDistance = 584.41107
+    farDistance = 895.19928
     focalDistance = 741.72992
     heightAngle = 0.78539819
   }
@@ -512,10 +512,10 @@ module csoList {
   }
   fields  {
     instanceName = csoList
-    baseAngle0 = "Cobb-angle: 13.84°"
-    baseClassification = "Mild scoliosis"
-    baseFirstVector = "[-27.897323608398438 234.7291259765625 789.693359375, 515.1449737548828 376.294677734375 782.814697265625]"
-    baseSecondVector = "[-82.9571533203125 296.0333557128906 756.054931640625, 568.7396240234375 304.7510070800781 759.516845703125]"
+    baseAngle0 = "Cobb-angle: 4.42°"
+    baseClassification = "Normal spine"
+    baseFirstVector = "[-112.21441650390625 221.6033935546875 727.8995971679688, 600.7805786132812 361.9091796875 710.7206420898438]"
+    baseSecondVector = "[-41.981658935546875 261.3470764160156 735.4844360351562, 532.6429748535156 329.1723937988281 763.9732055664062]"
   }
 }
 module DirectDicomImport {
@@ -1239,7 +1239,7 @@ module SoExtText2 {
   }
   fields  {
     instanceName = SoExtTextCobbAnlge
-    string = ""
+    string = "Cobb-angle: 4.42°"
     color = "1 1 1"
     shadow = FALSE
     shadowColor = "0 0 0"
@@ -1419,7 +1419,7 @@ module SoExtText2 {
   }
   fields  {
     instanceName = SoExtTextClassification
-    string = ""
+    string = "Normal spine"
     color = "1 1 1"
     shadow = FALSE
     shadowColor = "0 0 0"
@@ -1471,7 +1471,7 @@ module SoVertexProperty {
   }
   fields  {
     instanceName = SoVertexFirstLine
-    vertex = "[  ]"
+    vertex = "[ -112.214416503906 221.603393554688 727.899597167969, 600.780578613281 361.9091796875 710.720642089844 ]"
     normal = "[  ]"
     texCoord = "[  ]"
     orderedRGBA = "[  ]"
@@ -1576,7 +1576,7 @@ module SoVertexProperty {
   }
   fields  {
     instanceName = SoVertexSecondLine
-    vertex = "[  ]"
+    vertex = "[ -41.9816589355469 261.347076416016 735.484436035156, 532.642944335938 329.172393798828 763.973205566406 ]"
     normal = "[  ]"
     texCoord = "[  ]"
     orderedRGBA = "[  ]"
