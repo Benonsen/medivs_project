@@ -2545,8 +2545,8 @@ module AffineTransformation3D {
     moduleGroupName = ""
     windows  {
       window _default {
-        geometry = "1214 -659 271 504"
-        relativePosition = "0.2031 -0.0921"
+        geometry = "-406 -971 271 504"
+        relativePosition = "-0.3203 -0.0752"
         sizeHint = "269 504"
         wasOpen = no
       }
@@ -2554,12 +2554,12 @@ module AffineTransformation3D {
   }
   fields  {
     instanceName = AffineTransformation3D
-    optParameters = "0 0 0 0 0 0 1 1 1 0 0 0 "
+    optParameters = "0 0 0 0 -0.25373518 0 1 1 1 0 0 0 "
     translationX = 0
     translationY = 0
     translationZ = 0
     rotationX = 0
-    rotationY = 0
+    rotationY = -0.253735184669495
     rotationZ = 0
     shearingX = 0
     shearingY = 0
@@ -2609,28 +2609,28 @@ module SoCameraAccess {
   fields  {
     instanceName = SoCameraAccess
     transformDeltaOut = "1 0 0 0
-0 1 0 0
-0 0 1 0
+0 1 1.80676579475403e-07 0
+0 -1.80676579475403e-07 1 0
 0 0 0 1"
-    viewingMatrix = "1 0 0 0
-0 5.9604651880818e-08 -1.00000011920929 0
-0 1 0 0
--82.5920104980469 -282.500061035156 -198.997161865234 1"
-    projectionMatrix = "2.41421365737915 0 0 0
-0 0.77520626783371 0 0
-0 0 -4.78262090682983 -1
-0 0 -1250.69165039063 0"
-    cameraSpaceMatrix = "1 0 0 0
-0 5.96046447753906e-08 -1 0
-0 1 5.96046447753906e-08 0
--82.5920104980469 -282.500061035156 -198.997146606445 1"
-    camPosition = "82.5920104980469 -198.997131347656 282.500061035156"
-    lookAtPosition = "0 -0.999999940395355 -5.96046447753906e-08"
-    upVector = "0 5.9604651880818e-08 1"
-    viewVector = "0 1 0"
-    viewportSizeOut = "315 981"
-    nearDistance = 216.28458
-    farDistance = 330.64157
+    viewingMatrix = "0.967940032482147 0.00915004312992096 -0.251014441251755 0
+-0.251077204942703 0.00650116056203842 -0.967945158481598 0
+-0.007224858738482 0.999936997890472 0.0085900854319334 0
+-78.8739013671875 -284.08203125 -643.13720703125 1"
+    projectionMatrix = "2.04133152961731 0 0 0
+0 2.41421341896057 0 0
+4.699276345832e-08 0 -10.2257766723633 -1
+0 0 -7440.7900390625 0"
+    cameraSpaceMatrix = "0.937528371810913 -0.24089889228344 -0.251014441251755 0
+-0.24089889228344 0.0710616707801819 -0.967945277690887 0
+0.251014441251755 0.967945277690887 0.00859004259109497 0
+-149.499664306641 -254.113311767578 -643.13720703125 1"
+    camPosition = "-82.4921569824219 -640.478149414063 289.018920898438"
+    lookAtPosition = "0.00722482800483704 -0.999937057495117 -0.00858992338180542"
+    upVector = "0.00915004312992096 0.00650116056203842 0.999936997890472"
+    viewVector = "0.251011997461319 0.96794605255127 -0.00857534632086754"
+    viewportSizeOut = "2156 1823"
+    nearDistance = 662.83075
+    farDistance = 806.52179
     NewViewingMatrix = "1 0 0 0
 0 1 0 0
 0 0 1 0
@@ -2657,7 +2657,7 @@ module SoTransform {
   fields  {
     instanceName = SoTransform1
     translation = "0 88 0"
-    rotation = "0 0 1 0"
+    rotation = "0 0 -1 0.253735303878784"
     scaleFactor = "1 1 1"
     scaleOrientation = "0 0 1 0"
     center = "88 0 0"
@@ -2681,7 +2681,7 @@ module ComposeVector4 {
     x = 0
     y = 0
     z = 1
-    d = 0
+    d = -0.253735184669495
   }
 }
 module SoCalculator {
@@ -2690,9 +2690,9 @@ module SoCalculator {
     moduleGroupName = ""
     windows  {
       window _default {
-        geometry = "-35 -1058 389 662"
-        relativePosition = "-0.1104 -0.1540"
-        sizeHint = "388 662"
+        geometry = "-32 -1124 379 674"
+        relativePosition = "-0.1113 -0.2138"
+        sizeHint = "378 674"
         wasOpen = no
       }
     }
@@ -2707,7 +2707,7 @@ module SoCalculator {
     f = 0
     g = 0
     h = 0
-    va = "0 1 0"
+    va = "0.251011997461319 0.96794605255127 -0.00857534632086754"
     vb = "0 0 0"
     vc = "0 0 0"
     vd = "0 0 0"
@@ -2715,7 +2715,7 @@ module SoCalculator {
     vf = "0 0 0"
     vg = "0 0 0"
     vh = "0 0 0"
-    oa = 0
+    oa = -0.25373518
     ob = 0
     oc = 0
     od = 0
@@ -3058,8 +3058,8 @@ module AffineTransformation3D {
     moduleGroupName = ""
     windows  {
       window _default {
-        geometry = "665 -989 271 504"
-        relativePosition = "0.2026 -0.0915"
+        geometry = "566 -1219 271 504"
+        relativePosition = "0.1543 -0.2998"
         sizeHint = "269 504"
         wasOpen = no
       }
@@ -3067,12 +3067,12 @@ module AffineTransformation3D {
   }
   fields  {
     instanceName = AffineTransformation3D1
-    optParameters = "0 0 0 0 0 0 1 1 1 0 0 0 "
+    optParameters = "0 0 0 0 -2.0336673 0 1 1 1 0 0 0 "
     translationX = 0
     translationY = 0
     translationZ = 0
     rotationX = 0
-    rotationY = 0
+    rotationY = -2.03366732597351
     rotationZ = 0
     shearingX = 0
     shearingY = 0
@@ -3103,25 +3103,25 @@ module SoCameraAccess {
 0 1 0 0
 0 0 1 0
 0 0 0 1"
-    viewingMatrix = "1 0 0 0
-0 5.9604651880818e-08 -1.00000011920929 0
-0 1 0 0
-0.5 0 -283.122192382813 1"
-    projectionMatrix = "2.41421341896057 0 0 0
-0 0.772745311260223 0 0
-0 -5.30116786023882e-08 -5.02159070968628 -1
-0 0 -1339.35632324219 0"
-    cameraSpaceMatrix = "1 0 0 0
-0 5.96046447753906e-08 -1 0
-0 1 5.96046447753906e-08 0
-0.5 3.24464053846896e-07 -283.122161865234 1"
-    camPosition = "-0.5 -283.122161865234 1.6550931832171e-05"
-    lookAtPosition = "0 -0.999999940395355 -5.96046447753906e-08"
-    upVector = "0 5.9604651880818e-08 1"
-    viewVector = "0 1 -5.96046447753906e-08"
-    viewportSizeOut = "314 981"
-    nearDistance = 222.42566
-    farDistance = 333.04141
+    viewingMatrix = "-0.443139493465424 0.168629854917526 -0.880449771881104 0
+-0.896224737167358 -0.0611894242465496 0.439359813928604 0
+0.020214956253767 0.983778417110443 0.178245693445206 0
+-5.23483276367188 -0.197601318359375 -932.314575195313 1"
+    projectionMatrix = "2.04133176803589 0 0 0
+0 2.41421365737915 0 0
+0 0 -7.9407901763916 -1
+0 0 -7339.91650390625 0"
+    cameraSpaceMatrix = "0.342080116271973 0.328313648700714 -0.880449414253235 0
+0.328313648700714 0.8361656665802 0.439359843730927 0
+0.880449414253235 -0.439359843730927 0.178245782852173 0
+2.06224060058594 4.81557464599609 -932.314331054688 1"
+    camPosition = "-823.142211914063 404.917846679688 166.481231689453"
+    lookAtPosition = "-0.0202149450778961 -0.983778357505798 -0.178245663642883"
+    upVector = "0.168629854917526 -0.0611894242465496 0.983778417110443"
+    viewVector = "0.880443751811981 -0.439367383718491 -0.178255528211594"
+    viewportSizeOut = "2156 1823"
+    nearDistance = 820.94714
+    farDistance = 1057.5044
     NewViewingMatrix = "1 0 0 0
 0 1 0 0
 0 0 1 0
@@ -3138,8 +3138,8 @@ module SoTransform {
     moduleGroupName = ""
     windows  {
       window _default {
-        geometry = "-520 -1049 440 188"
-        relativePosition = "-0.3345 -0.1458"
+        geometry = "-522 -1118 440 188"
+        relativePosition = "-0.3354 -0.2083"
         sizeHint = "440 188"
         wasOpen = no
       }
@@ -3148,7 +3148,7 @@ module SoTransform {
   fields  {
     instanceName = SoTransform3
     translation = "0 80 0"
-    rotation = "0 0 1 0"
+    rotation = "0 0 -1 2.03366732597351"
     scaleFactor = "1 1 1"
     scaleOrientation = "0 0 1 0"
     center = "261.5 232.875 708.5"
@@ -3172,7 +3172,7 @@ module ComposeVector4 {
     x = 0
     y = 0
     z = 1
-    d = 0
+    d = -2.03366732597351
   }
 }
 module SoCalculator {
@@ -3181,9 +3181,9 @@ module SoCalculator {
     moduleGroupName = ""
     windows  {
       window _default {
-        geometry = "653 -1125 383 668"
-        relativePosition = "0.2241 -0.2147"
-        sizeHint = "382 668"
+        geometry = "-465 -1205 390 668"
+        relativePosition = "-0.3198 -0.2871"
+        sizeHint = "389 668"
         wasOpen = no
       }
     }
@@ -3198,7 +3198,7 @@ module SoCalculator {
     f = 0
     g = 0
     h = 0
-    va = "0 1 -5.96046447753906e-08"
+    va = "0.880443751811981 -0.439367383718491 -0.178255528211594"
     vb = "261.5 310.5 708.5"
     vc = "0 0 0"
     vd = "0 0 0"
@@ -3206,7 +3206,7 @@ module SoCalculator {
     vf = "0 0 0"
     vg = "0 0 0"
     vh = "0 0 0"
-    oa = 0
+    oa = -2.0336673
     ob = 0
     oc = 0
     od = 0
@@ -3425,8 +3425,8 @@ module SoRenderArea {
     moduleGroupName = ""
     windows  {
       window _viewer {
-        geometry = "1919 -2689 1232 1042"
-        relativePosition = "1.0498 -1.6313"
+        geometry = "1918 -2688 1232 1042"
+        relativePosition = "1.0488 -1.6304"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -3500,8 +3500,8 @@ module SoInteractionInfo {
     moduleGroupName = ""
     windows  {
       window _default {
-        geometry = "162 -1333 410 347"
-        relativePosition = "-0.0093 -0.4031"
+        geometry = "160 -1333 410 347"
+        relativePosition = "-0.0103 -0.4031"
         sizeHint = "410 347"
         wasOpen = no
       }
@@ -3545,8 +3545,8 @@ module SoRenderArea {
     moduleGroupName = ""
     windows  {
       window _viewer {
-        geometry = "1921 -1616 1232 1042"
-        relativePosition = "1.0503 -0.6594"
+        geometry = "1920 -1615 1232 1042"
+        relativePosition = "1.0498 -0.6585"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -3586,8 +3586,8 @@ module SoRenderArea {
     moduleGroupName = ""
     windows  {
       window _viewer {
-        geometry = "4 30 755 785"
-        relativePosition = "-0.0020 0.8315"
+        geometry = "3 29 755 785"
+        relativePosition = "-0.0024 0.8306"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -4068,8 +4068,8 @@ module AffineTransformation3D {
     moduleGroupName = ""
     windows  {
       window _default {
-        geometry = "665 -989 271 504"
-        relativePosition = "0.2026 -0.0915"
+        geometry = "404 -990 271 504"
+        relativePosition = "0.0752 -0.0924"
         sizeHint = "269 504"
         wasOpen = no
       }
@@ -4116,22 +4116,22 @@ module SoCameraAccess {
     viewingMatrix = "1 0 0 0
 0 5.9604651880818e-08 -1.00000011920929 0
 0 1 0 0
--0.384773254394531 -5.11517333984375 -257.112060546875 1"
-    projectionMatrix = "2.41421365737915 0 0 0
+-107.310546875 -263.75 -791.090209960938 1"
+    projectionMatrix = "2.41421341896057 0 0 0
 0 0.772745370864868 0 0
-0 0 -3.96569919586182 -1
-0 0 -947.193237304688 0"
+0 -5.25735046608133e-08 -700.123840332031 -1
+0 0 -628990.75 0"
     cameraSpaceMatrix = "1 0 0 0
 0 5.96046447753906e-08 -1 0
 0 1 5.96046447753906e-08 0
--0.384771347045898 -5.11517333984375 -257.112030029297 1"
-    camPosition = "0.384771347045898 -257.112030029297 5.11518859863281"
+-107.310546875 -263.749969482422 -791.090087890625 1"
+    camPosition = "107.310546875 -791.090087890625 263.750030517578"
     lookAtPosition = "0 -0.999999940395355 -5.96046447753906e-08"
     upVector = "0 5.9604651880818e-08 1"
     viewVector = "0 1 0"
     viewportSizeOut = "314 981"
-    nearDistance = 190.74721
-    farDistance = 319.38278
+    nearDistance = 897.11792
+    farDistance = 899.68433
     NewViewingMatrix = "1 0 0 0
 0 1 0 0
 0 0 1 0
@@ -4191,9 +4191,9 @@ module SoCalculator {
     moduleGroupName = ""
     windows  {
       window _default {
-        geometry = "847 -1028 397 680"
-        relativePosition = "0.3223 -0.1268"
-        sizeHint = "396 680"
+        geometry = "846 -1027 379 680"
+        relativePosition = "0.3174 -0.1259"
+        sizeHint = "378 680"
         wasOpen = no
       }
     }
@@ -5131,196 +5131,6 @@ module SoBackground {
     depthBuffer = TRUE
   }
 }
-module ImageSave {
-  internal  {
-    frame = "7237 -827 104 72"
-    moduleGroupName = ""
-    showNetworkPanel = true
-    windows  {
-      window _default {
-        geometry = "415 -1083 401 496"
-        relativePosition = "0.1123 -0.1766"
-        sizeHint = "401 496"
-        wasOpen = no
-      }
-    }
-  }
-  fields  {
-    instanceName = ImageSave
-    taskVerboseLogging = FALSE
-    filename = ""
-    addFileExtension = TRUE
-    format = PNG
-    comment = MeVisLab
-    allowOverwrite = TRUE
-    autoFilename = FALSE
-    sourceName = ""
-    postfix = .result1
-    dicomNameUsed = TRUE
-    dicomMetaHeader = TRUE
-    dicomDerived = TRUE
-    dicomDerivedImageType = "OTHER\\MEVISLAB"
-    dicomDiscardTags = FrameSpecific
-    dicomStoreTimeInfo = None
-    dicomSetWindow = FALSE
-    dicomWindowCenter = 0
-    dicomWindowWidth = 0
-    dicomIgnoreHalfVoxelShift = FALSE
-    tiffCompression = LZW
-    tiffTileX = 128
-    tiffTileY = 128
-    tiffTileXAuto = TRUE
-    tiffTileYAuto = TRUE
-    tiffLinearRGB = FALSE
-    saveDicomHeaderOnly = FALSE
-    pngCompression = Default
-    pngInterlaced = FALSE
-    jpegQuality = 75
-    jpegProgressive = FALSE
-  }
-}
-module MLImageFormatSave {
-  internal  {
-    frame = "7509 -875 184 56"
-    moduleGroupName = ""
-    showNetworkPanel = true
-  }
-  fields  {
-    instanceName = MLImageFormatSave
-    compression = LZ4
-    dblHintVal0 = 0
-    intHintVal0 = 0
-    strHintVal0 = ""
-    boolHintVal0 = FALSE
-    dblHintVal1 = 0
-    intHintVal1 = 0
-    strHintVal1 = ""
-    boolHintVal1 = FALSE
-    dblHintVal2 = 0
-    intHintVal2 = 0
-    strHintVal2 = ""
-    boolHintVal2 = FALSE
-    dblHintVal3 = 0
-    intHintVal3 = 0
-    strHintVal3 = ""
-    boolHintVal3 = FALSE
-    dblHintVal4 = 0
-    intHintVal4 = 0
-    strHintVal4 = ""
-    boolHintVal4 = FALSE
-    dblHintVal5 = 0
-    intHintVal5 = 0
-    strHintVal5 = ""
-    boolHintVal5 = FALSE
-    dblHintVal6 = 0
-    intHintVal6 = 0
-    strHintVal6 = ""
-    boolHintVal6 = FALSE
-    dblHintVal7 = 0
-    intHintVal7 = 0
-    strHintVal7 = ""
-    boolHintVal7 = FALSE
-    dblHintVal8 = 0
-    intHintVal8 = 0
-    strHintVal8 = ""
-    boolHintVal8 = FALSE
-    dblHintVal9 = 0
-    intHintVal9 = 0
-    strHintVal9 = ""
-    boolHintVal9 = FALSE
-    userTag00 = ""
-    userTag01 = ""
-    userTag02 = ""
-    userTag03 = ""
-    userTag04 = ""
-    userTag05 = ""
-    userTag06 = ""
-    userTag07 = ""
-    userTag08 = ""
-    userTag09 = ""
-    regionOffset = "0 0 0 0 0 0"
-    suppressWorldPos = FALSE
-    fileName = ""
-  }
-}
-module MLImageFormatSave {
-  internal  {
-    frame = "6905 -1083 192 56"
-    moduleGroupName = ""
-    showNetworkPanel = true
-  }
-  fields  {
-    instanceName = MLImageFormatSave1
-    compression = LZ4
-    dblHintVal0 = 0
-    intHintVal0 = 0
-    strHintVal0 = ""
-    boolHintVal0 = FALSE
-    dblHintVal1 = 0
-    intHintVal1 = 0
-    strHintVal1 = ""
-    boolHintVal1 = FALSE
-    dblHintVal2 = 0
-    intHintVal2 = 0
-    strHintVal2 = ""
-    boolHintVal2 = FALSE
-    dblHintVal3 = 0
-    intHintVal3 = 0
-    strHintVal3 = ""
-    boolHintVal3 = FALSE
-    dblHintVal4 = 0
-    intHintVal4 = 0
-    strHintVal4 = ""
-    boolHintVal4 = FALSE
-    dblHintVal5 = 0
-    intHintVal5 = 0
-    strHintVal5 = ""
-    boolHintVal5 = FALSE
-    dblHintVal6 = 0
-    intHintVal6 = 0
-    strHintVal6 = ""
-    boolHintVal6 = FALSE
-    dblHintVal7 = 0
-    intHintVal7 = 0
-    strHintVal7 = ""
-    boolHintVal7 = FALSE
-    dblHintVal8 = 0
-    intHintVal8 = 0
-    strHintVal8 = ""
-    boolHintVal8 = FALSE
-    dblHintVal9 = 0
-    intHintVal9 = 0
-    strHintVal9 = ""
-    boolHintVal9 = FALSE
-    userTag00 = ""
-    userTag01 = ""
-    userTag02 = ""
-    userTag03 = ""
-    userTag04 = ""
-    userTag05 = ""
-    userTag06 = ""
-    userTag07 = ""
-    userTag08 = ""
-    userTag09 = ""
-    regionOffset = "0 0 0 0 0 0"
-    suppressWorldPos = FALSE
-    fileName = ""
-  }
-}
-module SoMLExample {
-  internal  {
-    frame = "7033 -819 112 56"
-    moduleGroupName = ""
-  }
-  fields  {
-    instanceName = SoMLExample
-    renderCaching = AUTO
-    boundingBoxCaching = AUTO
-    renderCulling = AUTO
-    pickCulling = AUTO
-    info = "Input is invalid"
-  }
-}
 connections  {
   ApplyDicomPixelModifiers.input0 = NormalSpineImport.output0
   ROISelect.inImage = ApplyDicomPixelModifiers.output0
@@ -5368,6 +5178,7 @@ connections  {
   SoGroup.children = "SoSeparator1.self SoGroup1.self"
   SoSeparator1.children = "SoCameraAccess.self SoTransform2.self SoTransform1.self SoTransform.self SoGVRVolumeRenderer.self"
   AffineTransformation3D.input0 = OrthoReformat31.output1
+  AffineTransformation3D.rotationY = SoCalculator.oa
   SoTransform1.translation = SoCalculator.ova
   SoTransform1.rotation = ComposeVector4.v
   ComposeVector4.d = SoCalculator.oa
@@ -5387,6 +5198,7 @@ connections  {
   SoGroup2.children = "SoSeparator2.self SoGroup3.self"
   SoSeparator2.children = "SoCameraAccess1.self SoTransform4.self SoTransform3.self SoGVRVolumeRenderer1.self"
   AffineTransformation3D1.input0 = OrthoReformat32.output1
+  AffineTransformation3D1.rotationY = SoCalculator1.oa
   SoTransform3.rotation = ComposeVector41.v
   SoTransform3.center = SoCalculator1.ovc
   ComposeVector41.d = SoCalculator1.oa
@@ -5421,6 +5233,7 @@ connections  {
   SoGroup4.children = "SoSeparator3.self SoGroup5.self SoWEMRenderer1.self"
   SoSeparator3.children = "SoCameraAccess2.self SoTransform6.self SoTransform5.self SoGVRVolumeRenderer2.self"
   AffineTransformation3D2.input0 = OrthoReformat33.output1
+  AffineTransformation3D2.rotationY = SoCalculator2.oa
   SoTransform5.translation = SoCalculator2.ovd
   SoTransform5.rotation = ComposeVector42.v
   SoTransform5.center = SoCalculator2.ovc
@@ -5631,6 +5444,41 @@ Another issue is that the interpolation does not work as expected when targeting
         isCollapsed = False
         drawAsComment = False
         titleFrame = "10851 646 191 22"
+      }
+      MLABNetworkModelItem MLABNoteItem {
+        uniqueId = 304
+        objectName = ""
+        parentUniqueId = 0
+        frame = "8226 -726 200 200"
+        backgroundColor  {
+          r = 252
+          g = 242
+          b = 2
+          a = 255
+        }
+        text = "If it lags too much, you can disconnect the connections to the AffineTransformation3D modules. Updating the transformation at each camera movement is computationally expensive but it provides a nice effect with the 2d image in the background"
+        richText = "*<html>
+  <head>
+    <style type="text/css">
+      a.headerlink {
+        visibility: hidden;
+      }
+      table {
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+
+  <p>If it lags too much, you can disconnect the connections to the AffineTransformation3D modules. Updating the transformation at each camera movement is computationally expensive but it provides a nice effect with the 2d image in the background</p>
+
+
+  </body>
+</html>*"
+        titleText = "Reduce lagging"
+        isCollapsed = False
+        drawAsComment = False
+        titleFrame = "8231 -721 190 22"
       }
     }
   }
