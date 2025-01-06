@@ -1,0 +1,79 @@
+Interface  {
+  Inputs {
+    Field baseImage {
+      type = Image
+    }
+  }
+  
+  Outputs {
+    Field resampledImage {
+      type = Image
+    }
+    Field vL05 { type = MLBase allowedTypes = WEM }
+    Field vL04 { type = MLBase allowedTypes = WEM }
+    Field vL03 { type = MLBase allowedTypes = WEM }
+    Field vL02 { type = MLBase allowedTypes = WEM }
+    Field vL01 { type = MLBase allowedTypes = WEM }
+    Field vT12 { type = MLBase allowedTypes = WEM }
+    Field vT11 { type = MLBase allowedTypes = WEM }
+    Field vT10 { type = MLBase allowedTypes = WEM }
+    Field vT09 { type = MLBase allowedTypes = WEM }
+    Field vT08 { type = MLBase allowedTypes = WEM }
+    Field vT07 { type = MLBase allowedTypes = WEM }
+    Field vT06 { type = MLBase allowedTypes = WEM }
+    Field vT05 { type = MLBase allowedTypes = WEM }
+    Field vT04 { type = MLBase allowedTypes = WEM }
+    Field vT03 { type = MLBase allowedTypes = WEM }
+    Field vT02 { type = MLBase allowedTypes = WEM }
+    Field vT01 { type = MLBase allowedTypes = WEM }
+    Field vC07 { type = MLBase allowedTypes = WEM }
+    Field vC06 { type = MLBase allowedTypes = WEM }
+    Field vC05 { type = MLBase allowedTypes = WEM }
+    Field vOther { type = MLBase allowedTypes = WEM }
+  }
+  
+  Parameters {
+    Field spineCSOsDirectoryName {
+      type       = String
+      value      = "."
+      isFilePath = True
+    }
+  }
+}
+
+Commands {
+  source = $(LOCAL)/vertebraeToSurfaces.py
+  initCommand = init
+  finalizeCommand = destroy
+  
+  FieldListener spineCSOsDirectoryName {
+    command = handleDirectoryChange
+  }
+}
+
+NetworkPanel {
+  Button RunPythonScript.execute {
+    command = run
+  }
+}
+
+Window {
+  title = "Vertebrae to WEMs"
+  
+  Vertical {
+    margin  = 5
+    spacing = 15
+    
+    Box {
+      Field spineCSOsDirectoryName {
+        browseButton = Yes
+        browseMode   = directory
+      }
+    }
+    
+    Button RunPythonScript.execute {
+      command = run
+      alignX  = Right
+    }
+  }
+}

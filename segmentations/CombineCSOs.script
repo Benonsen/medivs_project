@@ -1,0 +1,67 @@
+Interface  {
+  Parameters {  
+    Field spineCSOsDirectoryName {
+      type  = String
+      value = ''
+      isFilePath = True
+    }
+    Field vertebraLabels {
+      type = String
+      value = all
+      comment = "Comma-separated string list of vertebrae to be combined. A vertebra label has the format f\"[L|T|C]{idx:02d}\" (e.g. T09 would be the ninth thoracic vertebra). The special value \"all\" combines all available vertebrae"
+      editable = True
+    }
+    Field isVisibleCSO { // is always true (but somehow required by MeVisLab)
+      type = Bool
+      value = True
+      editable = False
+    }
+  }
+  
+  Outputs  {
+    Field outCombinedCSOList {
+      type = MLBase
+      visibleOn = isVisibleCSO
+      allowedTypes = CSOList
+    }  
+  }
+}
+
+Commands {
+  source = $(LOCAL)/combineCSOs.py
+  
+  FieldListener spineCSOsDirectoryName {
+    command = handleDirectoryChange
+  }
+}
+
+NetworkPanel {
+  Button RunPythonScript.execute {
+    command = combineCSOs
+  }
+}
+
+Window {
+  title = "Combine CSOs"
+  
+  Vertical {
+    margin  = 5
+    spacing = 15
+    
+    Box {
+      Field spineCSOsDirectoryName {
+        browseButton = Yes
+        browseMode   = directory
+      }
+    }
+    
+    Box {
+      Field vertebraLabels {}
+    }
+    
+    Button RunPythonScript.execute {
+      command = combineCSOs
+      alignX = Right
+    }
+  }
+}

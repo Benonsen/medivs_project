@@ -1,0 +1,44 @@
+Interface  {
+  Inputs {
+    Field inWEM {
+      type = MLBase
+      allowedTypes = WEM
+    }
+  }
+  Outputs {
+    Field self {
+      type = SoNode
+    }
+  }
+  Parameters {
+    Field diffuseColor {
+      type = Color
+    }
+  }
+}
+
+Commands {
+  source      = $(LOCAL)/VertebraWEMRenderer.py
+  initCommand = init
+  
+  FieldListener diffuseColor {
+    command = handleColorChange
+  }
+}
+
+Window {
+  title = "Vertebra WEM Renderer"
+  
+  Vertical {
+    margin  = 5
+    spacing = 15
+    
+    Horizontal {
+      Label {
+        title = "Diffuse Color"
+      }
+    
+      ColorEdit diffuseColor {}
+    }
+  }
+}

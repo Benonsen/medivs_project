@@ -1,0 +1,829 @@
+// MDL v1 utf8
+mevislabVersion = 4.0.2.13
+network  {
+  watchlist = ""
+}
+module ImageResample {
+  internal  {
+    frame = "-1647 216 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "-249 -984 266 265"
+        relativePosition = "-0.2446 -0.0870"
+        sizeHint = "259 265"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImageResample
+    resamplingOperation = Downsampling
+    xResample = 2
+    yResample = 2
+    zResample = 1
+    cResample = 1
+    tResample = 1
+    uResample = 1
+    antiAliasingFilter = "Cubic B-Spline"
+    borderHandling = Fill
+    borderFillValue = 0
+    autoUpdate = TRUE
+  }
+}
+module RunPythonScript {
+  internal  {
+    frame = "-79 -14 160 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "454 318 627 297"
+        relativePosition = "0.0000 -0.1091"
+        sizeHint = "627 306"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = RunPythonScript
+    in0 = ""
+    in1 = ""
+    in2 = ""
+    in3 = ""
+    in4 = ""
+    in5 = ""
+    in6 = ""
+    in7 = ""
+    in8 = ""
+    in9 = ""
+    inComment0 = in0
+    inComment1 = in1
+    inComment2 = in2
+    inComment3 = in3
+    inComment4 = in4
+    inComment5 = in5
+    inComment6 = in6
+    inComment7 = in7
+    inComment8 = in8
+    inComment9 = in9
+    autoApply0 = TRUE
+    autoApply1 = TRUE
+    autoApply2 = TRUE
+    autoApply3 = TRUE
+    autoApply4 = TRUE
+    autoApply5 = TRUE
+    autoApply6 = TRUE
+    autoApply7 = TRUE
+    autoApply8 = TRUE
+    autoApply9 = TRUE
+    out0 = ""
+    out1 = ""
+    out2 = ""
+    out3 = ""
+    out4 = ""
+    out5 = ""
+    out6 = ""
+    out7 = ""
+    out8 = ""
+    out9 = ""
+    outComment0 = out0
+    outComment1 = out1
+    outComment2 = out2
+    outComment3 = out3
+    outComment4 = out4
+    outComment5 = out5
+    outComment6 = out6
+    outComment7 = out7
+    outComment8 = out8
+    outComment9 = out9
+    initCode = "# For backward compatibility, set up CTX as alias for ctx
+CTX = ctx # ctx is the network's context, not RunPythonScript's"
+    wakeUpCode = ""
+    code = ""
+    finalizeCode = ""
+    showFields = FALSE
+    showInitCode = FALSE
+    showWakeUpCode = FALSE
+    showCode = FALSE
+    showFinalizeCode = FALSE
+    showConsole = FALSE
+  }
+}
+module CombineCSOs {
+  internal  {
+    frame = "-59 -27 120 56"
+    moduleGroupName = ""
+    localMacro = 1
+  }
+  fields  {
+    instanceName = CombineCSOs
+    spineCSOsDirectoryName = C:/Users/jakob/GitProjects/mv1/final-project/mevislab/medivs_project/segmentations/post-op
+    vertebraLabels = all
+  }
+}
+module CombineCSOs {
+  internal  {
+    frame = "-63 -27 128 56"
+    moduleGroupName = ""
+    localMacro = 1
+  }
+  fields  {
+    instanceName = CombineCSOs1
+    spineCSOsDirectoryName = C:/Users/jakob/GitProjects/mv1/final-project/mevislab/medivs_project/segmentations/post-op
+    vertebraLabels = all
+  }
+}
+module CombineCSOs {
+  internal  {
+    frame = "-63 -27 128 56"
+    moduleGroupName = ""
+    localMacro = 1
+  }
+  fields  {
+    instanceName = CombineCSOs2
+    spineCSOsDirectoryName = C:/Users/jakob/GitProjects/mv1/final-project/mevislab/medivs_project/segmentations/post-op
+    vertebraLabels = all
+  }
+}
+module CombineCSOs {
+  internal  {
+    frame = "-63 -27 128 56"
+    moduleGroupName = ""
+    localMacro = 1
+  }
+  fields  {
+    instanceName = CombineCSOs3
+    spineCSOsDirectoryName = C:/Users/jakob/GitProjects/mv1/final-project/mevislab/medivs_project/segmentations/post-op
+    vertebraLabels = all
+  }
+}
+module CombineCSOs {
+  internal  {
+    frame = "-63 -27 128 56"
+    moduleGroupName = ""
+    localMacro = 1
+  }
+  fields  {
+    instanceName = CombineCSOs4
+    spineCSOsDirectoryName = C:/Users/jakob/GitProjects/mv1/final-project/mevislab/medivs_project/segmentations/post-op
+    vertebraLabels = all
+  }
+}
+module CombineCSOs {
+  internal  {
+    frame = "-63 -27 128 56"
+    moduleGroupName = ""
+    localMacro = 1
+  }
+  fields  {
+    instanceName = CombineCSOs5
+    spineCSOsDirectoryName = C:/Users/jakob/GitProjects/mv1/final-project/mevislab/medivs_project/segmentations/post-op
+    vertebraLabels = T12
+  }
+}
+module CombineCSOs {
+  internal  {
+    frame = "-63 -27 128 56"
+    moduleGroupName = ""
+    localMacro = 1
+  }
+  fields  {
+    instanceName = CombineCSOs6
+    spineCSOsDirectoryName = C:/Users/jakob/GitProjects/mv1/final-project/mevislab/medivs_project/segmentations/post-op
+    vertebraLabels = all
+  }
+}
+module CombineCSOs {
+  internal  {
+    frame = "-63 -27 128 56"
+    moduleGroupName = ""
+    localMacro = 1
+  }
+  fields  {
+    instanceName = CombineCSOs7
+    spineCSOsDirectoryName = C:/Users/jakob/GitProjects/mv1/final-project/mevislab/medivs_project/segmentations/post-op
+    vertebraLabels = all
+  }
+}
+module CombineCSOs {
+  internal  {
+    frame = "-63 -27 128 56"
+    moduleGroupName = ""
+    localMacro = 1
+  }
+  fields  {
+    instanceName = CombineCSOs8
+    spineCSOsDirectoryName = C:/Users/jakob/GitProjects/mv1/final-project/mevislab/medivs_project/segmentations/post-op
+    vertebraLabels = T09
+  }
+}
+module CombineCSOs {
+  internal  {
+    frame = "-63 -27 128 56"
+    moduleGroupName = ""
+    localMacro = 1
+  }
+  fields  {
+    instanceName = CombineCSOs9
+    spineCSOsDirectoryName = C:/Users/jakob/GitProjects/mv1/final-project/mevislab/medivs_project/segmentations/post-op
+    vertebraLabels = all
+  }
+}
+module CombineCSOs {
+  internal  {
+    frame = "-67 -27 136 56"
+    moduleGroupName = ""
+    localMacro = 1
+  }
+  fields  {
+    instanceName = CombineCSOs10
+    spineCSOsDirectoryName = C:/Users/jakob/GitProjects/mv1/final-project/mevislab/medivs_project/segmentations/post-op
+    vertebraLabels = all
+  }
+}
+module CombineCSOs {
+  internal  {
+    frame = "-67 -27 136 56"
+    moduleGroupName = ""
+    localMacro = 1
+  }
+  fields  {
+    instanceName = CombineCSOs11
+    spineCSOsDirectoryName = C:/Users/jakob/GitProjects/mv1/final-project/mevislab/medivs_project/segmentations/post-op
+    vertebraLabels = all
+  }
+}
+module CombineCSOs {
+  internal  {
+    frame = "-67 -27 136 56"
+    moduleGroupName = ""
+    localMacro = 1
+  }
+  fields  {
+    instanceName = CombineCSOs12
+    spineCSOsDirectoryName = C:/Users/jakob/GitProjects/mv1/final-project/mevislab/medivs_project/segmentations/post-op
+    vertebraLabels = T05
+  }
+}
+module CombineCSOs {
+  internal  {
+    frame = "-67 -27 136 56"
+    moduleGroupName = ""
+    localMacro = 1
+  }
+  fields  {
+    instanceName = CombineCSOs13
+    spineCSOsDirectoryName = C:/Users/jakob/GitProjects/mv1/final-project/mevislab/medivs_project/segmentations/post-op
+    vertebraLabels = all
+  }
+}
+module CombineCSOs {
+  internal  {
+    frame = "-67 -27 136 56"
+    moduleGroupName = ""
+    localMacro = 1
+  }
+  fields  {
+    instanceName = CombineCSOs14
+    spineCSOsDirectoryName = C:/Users/jakob/GitProjects/mv1/final-project/mevislab/medivs_project/segmentations/post-op
+    vertebraLabels = all
+  }
+}
+module CombineCSOs {
+  internal  {
+    frame = "-67 -27 136 56"
+    moduleGroupName = ""
+    localMacro = 1
+  }
+  fields  {
+    instanceName = CombineCSOs15
+    spineCSOsDirectoryName = C:/Users/jakob/GitProjects/mv1/final-project/mevislab/medivs_project/segmentations/post-op
+    vertebraLabels = all
+  }
+}
+module CombineCSOs {
+  internal  {
+    frame = "-67 -27 136 56"
+    moduleGroupName = ""
+    localMacro = 1
+  }
+  fields  {
+    instanceName = CombineCSOs16
+    spineCSOsDirectoryName = C:/Users/jakob/GitProjects/mv1/final-project/mevislab/medivs_project/segmentations/post-op
+    vertebraLabels = all
+  }
+}
+module CombineCSOs {
+  internal  {
+    frame = "-67 -27 136 56"
+    moduleGroupName = ""
+    localMacro = 1
+  }
+  fields  {
+    instanceName = CombineCSOs17
+    spineCSOsDirectoryName = C:/Users/jakob/GitProjects/mv1/final-project/mevislab/medivs_project/segmentations/post-op
+    vertebraLabels = all
+  }
+}
+module CombineCSOs {
+  internal  {
+    frame = "-67 -27 136 56"
+    moduleGroupName = ""
+    localMacro = 1
+  }
+  fields  {
+    instanceName = CombineCSOs18
+    spineCSOsDirectoryName = C:/Users/jakob/GitProjects/mv1/final-project/mevislab/medivs_project/segmentations/post-op
+    vertebraLabels = all
+  }
+}
+module CombineCSOs {
+  internal  {
+    frame = "-67 -27 136 56"
+    moduleGroupName = ""
+    localMacro = 1
+  }
+  fields  {
+    instanceName = CombineCSOs19
+    spineCSOsDirectoryName = C:/Users/jakob/GitProjects/mv1/final-project/mevislab/medivs_project/segmentations/post-op
+    vertebraLabels = all
+  }
+}
+module CombineCSOs {
+  internal  {
+    frame = "-71 -27 144 56"
+    moduleGroupName = ""
+    localMacro = 1
+  }
+  fields  {
+    instanceName = CombineCSOs249
+    spineCSOsDirectoryName = C:/Users/jakob/GitProjects/mv1/final-project/mevislab/medivs_project/segmentations/post-op
+    vertebraLabels = L05,L04,L03,L02,L01,T11,T10,T08,T07,T06,T04,T03,T02,T01,C07,C06,C05
+  }
+}
+module CSOToSurface {
+  internal  {
+    frame = "-71 -27 144 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = CSOToSurface
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    adaptivity = 0
+    buildEdges = TRUE
+    isoValue = 0.5
+  }
+}
+module CSOToSurface {
+  internal  {
+    frame = "-75 -27 152 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = CSOToSurface1
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    adaptivity = 0
+    buildEdges = TRUE
+    isoValue = 0.5
+  }
+}
+module CSOToSurface {
+  internal  {
+    frame = "-75 -27 152 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = CSOToSurface2
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    adaptivity = 0
+    buildEdges = TRUE
+    isoValue = 0.5
+  }
+}
+module CSOToSurface {
+  internal  {
+    frame = "-75 -27 152 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = CSOToSurface3
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    adaptivity = 0
+    buildEdges = TRUE
+    isoValue = 0.5
+  }
+}
+module CSOToSurface {
+  internal  {
+    frame = "-75 -27 152 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = CSOToSurface4
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    adaptivity = 0
+    buildEdges = TRUE
+    isoValue = 0.5
+  }
+}
+module CSOToSurface {
+  internal  {
+    frame = "-75 -27 152 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = CSOToSurface5
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    adaptivity = 0
+    buildEdges = TRUE
+    isoValue = 0.5
+  }
+}
+module CSOToSurface {
+  internal  {
+    frame = "-75 -27 152 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = CSOToSurface6
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    adaptivity = 0
+    buildEdges = TRUE
+    isoValue = 0.5
+  }
+}
+module CSOToSurface {
+  internal  {
+    frame = "-75 -27 152 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = CSOToSurface7
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    adaptivity = 0
+    buildEdges = TRUE
+    isoValue = 0.5
+  }
+}
+module CSOToSurface {
+  internal  {
+    frame = "-75 -27 152 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = CSOToSurface8
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    adaptivity = 0
+    buildEdges = TRUE
+    isoValue = 0.5
+  }
+}
+module CSOToSurface {
+  internal  {
+    frame = "-75 -27 152 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = CSOToSurface9
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    adaptivity = 0
+    buildEdges = TRUE
+    isoValue = 0.5
+  }
+}
+module CSOToSurface {
+  internal  {
+    frame = "-79 -27 160 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = CSOToSurface10
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    adaptivity = 0
+    buildEdges = TRUE
+    isoValue = 0.5
+  }
+}
+module CSOToSurface {
+  internal  {
+    frame = "-79 -27 160 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = CSOToSurface11
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    adaptivity = 0
+    buildEdges = TRUE
+    isoValue = 0.5
+  }
+}
+module CSOToSurface {
+  internal  {
+    frame = "-79 -27 160 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = CSOToSurface12
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    adaptivity = 0
+    buildEdges = TRUE
+    isoValue = 0.5
+  }
+}
+module CSOToSurface {
+  internal  {
+    frame = "-79 -27 160 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = CSOToSurface13
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    adaptivity = 0
+    buildEdges = TRUE
+    isoValue = 0.5
+  }
+}
+module CSOToSurface {
+  internal  {
+    frame = "-79 -27 160 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = CSOToSurface14
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    adaptivity = 0
+    buildEdges = TRUE
+    isoValue = 0.5
+  }
+}
+module CSOToSurface {
+  internal  {
+    frame = "-79 -27 160 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = CSOToSurface15
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    adaptivity = 0
+    buildEdges = TRUE
+    isoValue = 0.5
+  }
+}
+module CSOToSurface {
+  internal  {
+    frame = "-79 -27 160 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = CSOToSurface16
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    adaptivity = 0
+    buildEdges = TRUE
+    isoValue = 0.5
+  }
+}
+module CSOToSurface {
+  internal  {
+    frame = "-79 -27 160 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = CSOToSurface17
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    adaptivity = 0
+    buildEdges = TRUE
+    isoValue = 0.5
+  }
+}
+module CSOToSurface {
+  internal  {
+    frame = "-79 -27 160 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = CSOToSurface18
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    adaptivity = 0
+    buildEdges = TRUE
+    isoValue = 0.5
+  }
+}
+module CSOToSurface {
+  internal  {
+    frame = "-79 -27 160 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = CSOToSurface19
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    adaptivity = 0
+    buildEdges = TRUE
+    isoValue = 0.5
+  }
+}
+module CSOToSurface {
+  internal  {
+    frame = "-83 -27 168 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = CSOToSurface250
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    adaptivity = 0
+    buildEdges = TRUE
+    isoValue = 0.5
+  }
+}
+connections  {
+  CSOToSurface.input0 = ImageResample.output0
+  CSOToSurface.inCSO = CombineCSOs.outCombinedCSOList
+  CSOToSurface1.input0 = ImageResample.output0
+  CSOToSurface1.inCSO = CombineCSOs1.outCombinedCSOList
+  CSOToSurface2.input0 = ImageResample.output0
+  CSOToSurface2.inCSO = CombineCSOs2.outCombinedCSOList
+  CSOToSurface3.input0 = ImageResample.output0
+  CSOToSurface3.inCSO = CombineCSOs3.outCombinedCSOList
+  CSOToSurface4.input0 = ImageResample.output0
+  CSOToSurface4.inCSO = CombineCSOs4.outCombinedCSOList
+  CSOToSurface5.input0 = ImageResample.output0
+  CSOToSurface5.inCSO = CombineCSOs5.outCombinedCSOList
+  CSOToSurface6.input0 = ImageResample.output0
+  CSOToSurface6.inCSO = CombineCSOs6.outCombinedCSOList
+  CSOToSurface7.input0 = ImageResample.output0
+  CSOToSurface7.inCSO = CombineCSOs7.outCombinedCSOList
+  CSOToSurface8.input0 = ImageResample.output0
+  CSOToSurface8.inCSO = CombineCSOs8.outCombinedCSOList
+  CSOToSurface9.input0 = ImageResample.output0
+  CSOToSurface9.inCSO = CombineCSOs9.outCombinedCSOList
+  CSOToSurface10.input0 = ImageResample.output0
+  CSOToSurface10.inCSO = CombineCSOs10.outCombinedCSOList
+  CSOToSurface11.input0 = ImageResample.output0
+  CSOToSurface11.inCSO = CombineCSOs11.outCombinedCSOList
+  CSOToSurface12.input0 = ImageResample.output0
+  CSOToSurface12.inCSO = CombineCSOs12.outCombinedCSOList
+  CSOToSurface13.input0 = ImageResample.output0
+  CSOToSurface13.inCSO = CombineCSOs13.outCombinedCSOList
+  CSOToSurface14.input0 = ImageResample.output0
+  CSOToSurface14.inCSO = CombineCSOs14.outCombinedCSOList
+  CSOToSurface15.input0 = ImageResample.output0
+  CSOToSurface15.inCSO = CombineCSOs15.outCombinedCSOList
+  CSOToSurface16.input0 = ImageResample.output0
+  CSOToSurface16.inCSO = CombineCSOs16.outCombinedCSOList
+  CSOToSurface17.input0 = ImageResample.output0
+  CSOToSurface17.inCSO = CombineCSOs17.outCombinedCSOList
+  CSOToSurface18.input0 = ImageResample.output0
+  CSOToSurface18.inCSO = CombineCSOs18.outCombinedCSOList
+  CSOToSurface19.input0 = ImageResample.output0
+  CSOToSurface19.inCSO = CombineCSOs19.outCombinedCSOList
+  CSOToSurface250.input0 = ImageResample.output0
+  CSOToSurface250.inCSO = CombineCSOs249.outCombinedCSOList
+}
+networkModel = ""
